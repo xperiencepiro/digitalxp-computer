@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="We Sell Direct Uk-Used Laptops At a Cheap And Affordable Prices."
+    />
+    <title>DITALxp | COMPUTERS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@100;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Merriweather", serif;
+        font-family: "Roboto", sans-serif;
+      }
+
+      /* UTILITY */
+
+      .flex {
+        display: flex;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .center2 {
+        align-items: center;
+      }
+
+      .padtop1 {
+        padding: 1rem 0px;
+      }
+      .padtop2 {
+        padding: 2rem 0px;
+      }
+      .padtop3 {
+        padding: 3rem 0px;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0px;
+        background-color: #000;
+        color: #fff;
+        line-height: 1rem;
+        z-index: 2;
+      }
+
+      header h1 {
+        text-shadow: 2px 2px 2px #f7e122;
+      }
+
+      header pre {
+        font-weight: bold;
+        padding: 1rem 0px;
+      }
+
+      .contact {
+        display: flex;
+        align-self: center;
+        align-items: center;
+      }
+
+      .contact label {
+        padding: 0px 0.5rem;
+      }
+
+      .contact p a {
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .navbar {
+        width: 100%;
+      }
+
+      .navbar ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      .navbar ul li {
+        list-style: none;
+        padding: 0px 1rem;
+      }
+
+      .navbar ul li A{
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .navbar ul li:hover {
+        background-color: rgba(173, 216, 230, 0.493);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+      }
+
+      .showcase {
+        background: url("./img/pexels-hasan-albari-1229861.jpg") no-repeat
+          center center/cover;
+        height: 100vh;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .showcase h1 {
+        padding-top: 15rem;
+        color: #fff;
+        font-size: x-large;
+      }
+
+      .showcase .btn {
+        background-color: black;
+        color: #fff;
+        width: 8rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 100px;
+        font-weight: bold;
+      }
+
+      .btn:hover {
+        background-color: #fff;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+      }
+
+      #catalog {
+        padding: 100px 10px;
+      }
+
+      #catalog .products {
+        padding: 20px 10px;
+        text-align: center;
+      }
+
+      #catalog .products h2 {
+        padding: 100px 0px;
+      }
+
+      .container {
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .product {
+        /* height: 18.75rem; */
+        margin: 1.2rem;
+        border-radius: 5px;
+        color: #000;
+        overflow: hidden;
+        text-align: center;
+        padding: 5px;
+        font-weight: bold;
+      }
+
+      .product p{
+        padding-top: 10px;
+      }
+
+      .product img {
+        width: 15.6rem;
+      }
+
+      .product:hover {
+        transition: all 2s ease-in-out;
+        transform: translateX(10px);
+      }
+
+      footer{
+        background: #000;
+        color: #fff;
+        text-align: center;
+        font-size: small;
+      }
+
+      #foots{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:  20px 0px;
+      }
+
+      .foot{
+        padding: 20px;
+        max-width: 300px;
+      }
+
+      @media (max-width: 768px) {
+        .contact {
+          font-size: 0.7rem;
+        }
+
+        .contact label {
+          display: none;
+        }
+
+        .contact p a {
+          text-decoration: none;
+        }
+
+        #phone::before {
+          content: "Phone: ";
+          font-weight: bold;
+          padding: 0px 3px;
+        }
+
+        #email::before {
+          content: "Email: ";
+          font-weight: bold;
+          padding: 0px 3px;
+        }
+        #whatsapp::before {
+          content: "Whatsapp: ";
+          font-weight: bold;
+          padding: 0px 3px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .showcase h1{
+          font-size: small;
+        }
+
+        .contact {
+          display: inline-block;
+        }
+      }
+
+      @media (max-width: 450px) {
+        pre {
+          display: none;
+        }
+
+        .contact {
+          margin-top: 20px;
+        }
+
+        .navbar ul {
+          flex-direction: column;
+        }
+
+        .navbar ul li {
+          padding: 2px 0px;
+          font-size: small;
+        }
+      }
+
+      @media (max-width: 350px) {
+        header h1 {
+          font-size: 1rem;
+        }
+
+        .navbar ul li {
+          padding: 2px 0px;
+          font-size: x-small;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <h1>DIGITALxp COMPUTERS</h1>
+      <pre>Home of Direct UK-used laptops...</pre>
+      <div class="contact">
+        <label for="phone"
+          ><img
+            src="./img/call-incoming.png"
+            width="18rem"
+            style="background-color: #fff"
+          />
+        </label>
+        <p id="phone"><a href="call">+(234) 805 664 0898</a></p>
+        <label for="email"
+          ><span class="material-symbols-outlined"> mail </span></label
+        >
+        <p id="email">
+          <a href="mailto: xperiencepiro@gmail.com">xperiencepiro@gmail.com</a>
+        </p>
+        <label for="whatsapp"
+          ><img src="./img/whatsapp.png" width="20px"
+        /></label>
+        <p id="whatsapp"><a href="#">+(233) 55 327 7126</a></p>
+      </div>
+      <nav class="navbar padtop1">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#catalog">CATALOG</a></li>
+          <li><a href="#foots">ABOUT</a></li>
+          <li><a href="#foots">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="showcase">
+          <h1>ALL OUR PRODUCTS ARE UK-USED ONLY</h1>
+          <a class="btn" href="#catalog">Explore</a>
+        </div>
+      </section>
+      <section>
+        <div id="catalog">
+          <div class="products">
+            <h2>LENOVO</h2>
+            <div class="container">
+              <div class="product">
+                <div class="product_img">
+                  <img src="./img/T530-1.jpg" width="100%"/>
+                  <img src="./img/T530-2.jpg" width="100%"/>
+                  <img src="./img/T530-3.jpg" width="100%"/>
+                </div>
+                <div class="product_info">
+                  <p>NAME: THINKPAD T530</p>
+                  <p>HDD: 500GB</p>
+                  <p>RAM: 4GB</p>
+                  <p>PROCESSOR: INTEL CORE i5</p>
+                  <p>GENERATION: 3rd</p>
+                  <p>SCREEN SIZE: 15.6 INCH'S</p>
+                  <p>PRICE: 75K</p>
+                </div>
+              </div>
+              <div class="product">
+                <img src="./img/T440p-1.jpg" width="100%">
+                <img src="./img/T440p-2.jpg" width="100%">
+                <img src="./img/T440p-3.jpg" width="100%">
+                <p>NAME: THINKPAD T440</p>
+                  <p>HDD: 500GB</p>
+                  <p>RAM: 4GB</p>
+                  <p>PROCESSOR: INTEL CORE i5</p>
+                  <p>GENERATION: 4TH</p>
+                  <p>SCREEN SIZE: 14 INCH'S</p>
+                  <p>PRICE: 90K</p>
+              </div>
+              <div class="product">
+                <div class="product_img">
+                  <img src="./img/x240-1.jpg" width="100%" alt="Thinkpad x240"/>
+                  <img src="./img/x240-2.jpg" width="100%" alt="Thinkpad x240"/>
+                  <img src="./img/x240-3.jpg" width="100%" alt="Thinkpad x240"/>
+                </div>
+                <div class="product_info">
+                  <p>NAME: THINKPAD x240</p>
+                  <p>SSD: 120GB</p>
+                  <p>RAM: 4GB</p>
+                  <p>PROCESSOR: INTEL CORE i5</p>
+                  <p>GENERATION: 4TH</p>
+                  <p>SCREEN SIZE: 12.5 INCH'S</p>
+                  <p>PRICE: 90K</p>
+              </div>
+              <div class="product">
+                <img>
+              </div>
+              <div class="product">
+                <img>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <h2>Hewlett-Packard(HP)</h2>
+            <div class="container">
+              <div class="product">
+                <img src="./img/Elitebook 840-1.jpg">
+                <img src="./img/Elitebook 840-2.jpg">
+                <img src="./img/Elitebook 840-3.jpg">
+                <p>NAME: ELITEBOOK 840</p>
+                  <p>HDD: 500/750/1TBGB</p>
+                  <p>RAM: 4GB</p>
+                  <p>PROCESSOR: i7</p>
+                  <p>GENERATION: 5TH</p>
+                  <p>SCREEN SIZE: 14</p>
+                  <p>PRICE: 155K</p>
+              </div>
+              <div class="product">
+                <img src="./img/Elitebook745 G2-1.jpg">
+                <img src="./img/Elitebook745 G2-2.jpg">
+                <img src="./img/Elitebook745 G2-3.jpg">
+                <p>NAME: ELITEBOOK 745</p>
+                  <p>HDD: 500/750/1TBGB</p>
+                  <p>RAM: 4GB</p>
+                  <p>PROCESSOR: i5</p>
+                  <p>GENERATION: 5TH</p>
+                  <p>SCREEN SIZE: 14</p>
+                  <p>PRICE: 130K</p>
+              </div>
+              <div class="product">
+                <img src="./img/Elitebook 850-1.jpg">
+                <img src="./img/Elitebook 850-2.jpg">
+                <img src="./img/Elitebook 850-3.jpg">
+                <p>NAME: ELITEBOOK 850</p>
+                  <p>HDD: 500/750/1TBGB</p>
+                  <p>RAM: 4GB</p>
+                  <p>PROCESSOR: i5</p>
+                  <p>GENERATION: 5TH</p>
+                  <p>SCREEN SIZE: 15.6</p>
+                  <p>PRICE: 130K</p>
+              </div>
+              <div class="product">
+                <img src="./img/Probook 255-1.jpg">
+                <img src="./img/Probook 255-2.jpg">
+                <img src="./img/Probook 255-3.jpg">
+                <p>NAME: PROBOOK 255 G3</p>
+                  <p>HDD: 500/750/1TBGB</p>
+                  <p>RAM: 4GB</p>
+                  <p>PROCESSOR: i5</p>
+                  <p>GENERATION: 5TH</p>
+                  <p>SCREEN SIZE: 15.6</p>
+                  <p>PRICE: 130K</p>
+              </div>
+              <div class="product">
+                <img src="./img/Probook 455 G1-1.jpg">
+                <img src="./img/Probook 455 G1-2.jpg">
+                <img src="./img/Probook 455 G1-3.jpg">
+                <p>NAME: PROBOOK 455 G1/G/G3</p>
+                  <p>HDD: 500/750/1TBGB</p>
+                  <p>RAM: 4GB</p>
+                  <p>PROCESSOR: i5</p>
+                  <p>GENERATION: 5TH</p>
+                  <p>SCREEN SIZE: 15.6</p>
+                  <p>PRICE: 130K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="foots">
+        <div class="foot">
+          <h2>ABOUT</h2>
+          <p>We sell UK-Direct used laptops only. All our products are directly from uk. We also specialize in maintainance of laptops, software installation and hardware repaires.</p>
+        </div>
+        <div class="foot">
+          <H2>ADDRESS</H2>
+          <P>On-Site only</P>
+        </div>
+        <div class="foot">
+          <h2>CONTACTS</h2>
+          <P>Call: +(234) 805 664 0898</P>
+          <p>Email: xperiencepiro@gmail.com</p>
+          <p>Whatsapp: +(233) 55 327 7126</p>
+        </div>
+      </div>
+      <p>&copy; Copyright 2023. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
